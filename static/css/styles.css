@@ -253,7 +253,6 @@ header{
 .about .row{
     display: flex;
     text-align: center;
-    background: #272727;
     flex-wrap: wrap;
 }
 .about .row .image{
@@ -278,7 +277,7 @@ header{
     text-align: left;
 }
 .descuentos{
-    background: linear-gradient(rgba(0, 0, 0, 0.467),rgba(0, 0, 0, 0.566)), url(../img/Black-Elegant-HD-Background.jpg) no-repeat ;
+    background: linear-gradient(rgba(0, 0, 0, 0.467),rgba(0, 0, 0, 0.566)), url(../img/bgmadera.jpg) no-repeat ;
     background-position: center;
     background-size: cover;
 }
@@ -305,16 +304,15 @@ header{
 .descuentos .box-container .box{
     padding: 5rem;
     text-align: center;
-    border: solid 1px #ffffff;
-    background: rgb(162, 162, 162);
+    background: rgba(162, 162, 162, 0.404);
 }
 .descuentos .box-container .box h3{
-    color: #000000;
+    color: #ffffff;
     font-size: 2rem;
     padding: 1rem 0;
 }
 .descuentos .box-container .box .price{
-    color: green;
+    color: rgb(255, 255, 255);
     font-size: 2.5rem;
     padding: .5rem 0;
 }
@@ -342,6 +340,7 @@ header{
     border: solid 1px #f8f8f8;
     padding: 2rem;
     background: rgb(162, 162, 162);
+    margin-bottom: 7rem;
 }
 .products .box-container .box:hover{
     box-shadow: 0px 0px 10px #efb810;
@@ -354,4 +353,121 @@ header{
     color: green;
     font-size: 2.5rem;
 }
-
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.review .box-container .box{
+    border: solid 1px #ffffff;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #faff9f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #efb810;
+}
+.review .box-container .box p{
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: left;
+}
+.review .box-container h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #040000;
+    text-align: center;
+}
+.review h1{
+    color: #efb810;
+    text-align: center;
+    font-size: 4.6rem;
+}
+.review .box-container .box img{
+    max-width: 190px;
+    width: 190px;
+    padding: 1rem;
+}
+.contacto{
+    background: linear-gradient(rgba(0, 0, 0, 0.467),rgba(0, 0, 0, 0.566)), url(../img/bgcontact.jpg) no-repeat ;
+}
+.contacto .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contacto .row form{
+    flex: 1 1 45rem;
+}
+.contacto .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #040000;
+    border: solid 1px white;
+}
+.contacto .row form .inputBox span{
+    color: white;
+    font-size: 2rem;
+    padding-left:2em;
+}
+.contacto .row form .inputBox textarea{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    background: #040000;
+}
+.contacto .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    background: #040000;
+}
+.contacto .row .btn1{
+    width: 100%;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size:1.9rem;
+    color: #efb810;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    border: solid 1px white;
+}
+.contacto .row .btn1:hover{
+    box-shadow: 0 0 15px white;
+}
+.footer{
+    background: #010015;
+    text-align: center;
+}
+.footer .share{
+    padding: 1rem 0;
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: white;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.footer .share a:hover{
+    box-shadow: 0 0 5px white;
+    background: #040000;
+}
+.footer .credit{
+    color: rgba(255, 255, 255, 0.435);
+    font-size: 2rem;
+}
+.footer .credit span{
+    color: #efb71072;
+}
